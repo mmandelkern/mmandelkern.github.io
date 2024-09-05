@@ -69,29 +69,49 @@
 
 
 
+
+
+<img align = "right" src="frog.jpeg" alt="" height=160px border=200px style="border: 0;" >
+
+
+<div style="font-size: 18">
+
+
 <div style="font-size: 18">
 
 Matt Mandelkern <br>
-NYU, Fall 2024<br><br><br>
+Fall 2024, Thursdays, 1:15-3:15, NYU<br><br><br>
+
+<div style="left: 180px;width:400px; position:absolute; z-index: 2; font-size: 12; ">
+
+'In philosophy it is <i>can</i> in particular that we seem so often to recover, just as we had thought some problem settled, grinning residually up at us like a frog at the bottom of the beer mug.' - Austin, <i> Ifs and Cans</i></div><br><br><br><br>
 
 What does it mean to say S is able to &phi;? We will explore this issue from both the point of view of the philosophy of language, where it raises interesting issues in modal semantics, and philosophy of action, where it has been a central part of traditional questions about human action and agency. <br><br>
 
+<b>Expectations:</b> Read the set paper in advance of each meeting; write a seminar paper (15-20 pp) by the beginning of the Spring 2025 semester; present an outline of the paper (10-15 mins) in the final course meeting.<br><br>
+
 <b>Schedule:</b><br><br>
 
-September 5: Some puzzles about ‘can’: Kenny, <a href="https://link.springer.com/chapter/10.1007/978-94-010-1823-4_11" target="_blank">Human abilities and dynamic modalities</a>, Kratzer, <a href="https://www.jstor.org/stable/25000968" target="_blank">What 'Must' and 'Can' must and can mean</a>
-<br><br>September 12:  Ability and conditionals: Austin, <a href="https://academic.oup.com/book/12525/chapter/162270805" target="_blank">Ifs and Cans</a>
+September 5: <i>The existential analysis and some puzzles</i>
+<br> Kenny, <a href="https://link.springer.com/chapter/10.1007/978-94-010-1823-4_11" target="_blank">Human abilities and dynamic modalities</a>; Kratzer, <a href="https://www.jstor.org/stable/25000968" target="_blank">What 'Must' and 'Can' must and can mean</a>; Hackl, <a href="http://web.mit.edu/hackl/www/papers/files/AbilityAttributions.pdf" target="_blank">On the semantics of "ability attributions"</a>
+<br><br>September 12:  <i>Modally complex analyses</i><br> <i>The mixed modal analysis:</i> Brown, <a href="https://www.jstor.org/stable/pdf/30226385.pdf" target="_blank">On the logic of ability</a>
+<br><i>Conditional analyses</i>: Thomason, <a href="https://web.eecs.umich.edu/~rthomaso/documents/action/ability.pdf" target="_blank">Ability, action and context</a>; Honoré, <a href="https://philpapers.org/rec/HONCAC" target="_blank">Can and Can't</a>; Austin, <a href="https://academic.oup.com/book/12525/chapter/162270805" target="_blank">Ifs and Cans</a>; Mandelkern, Schultheis, and Boylan, <a href="https://philarchive.org/rec/MANAM" target="_blank">Agentive modals</a>
 <br><br><i>September 19: No class (Matt away)</i>
-<br><br>September 26: Guest speaker: <a href="https://philpeople.org/profiles/jacqueline-harding" target="_blank">Jacqueline Harding</a>, Harding and Sharadin, <a href="https://arxiv.org/abs/2405.08989" target="_blank">What is it for a Machine Learning Model to Have a Capability?</a>
-<br><br>October 3: More on conditional analyses: Honoré, Mandelkern et al.
-<br><br>October 10: Ability vs Control: Brown, Boylan, Santorio, Mandelkern
-<br><br>October 17: Abilities and dispositions: Vetter, <a href="https://philpapers.org/archive/VETAAD.pdf" target="_blank">Are abilities dispositions?</a> 
-<br><br>October 24: Ability and determinism: Lewis, <a href="https://philpapers.org/archive/LEWAWF.pdf" target="_blank">Are we free to break the laws?</a>; Albritton, <a href="https://www.jstor.org/stable/3131767" target="_blank">Freedom of will and freedom of action</a>; Setiya, <a href="http://www.ksetiya.net/uploads/2/4/5/2/24528408/freedom.pdf" target="_blank">Freedom and the will</a>
-<br><br>October 31: Ability and epistemology: Vetter, <a href="https://academic.oup.com/mind/advance-article/doi/10.1093/mind/fzae037/7725517?searchresult=1" target="_blank">Abilities and the epistemology of ordinary modality</a>
-<br><br>November 7: Guest speaker: <a href=https://www.anninaloets.com/" target="_blank">Annina Loets</a>, tbd
-<br><br>November 14: Guest speaker: <a href="https://www.davidhboylan.com/" target="_blank">David Boylan</a> on actuality entailments
-<br><br>November 21: Ability and ethics: Blumberg 
+<br><br>September 26: <i>Language models and abilities</i>
+<br>Guest speaker: <a href="https://philpeople.org/profiles/jacqueline-harding" target="_blank">Jacqueline Harding</a>, Harding and Sharadin, <a href="https://philpapers.org/rec/HARWII-7" target="_blank">What is it for a Machine Learning Model to Have a Capability?</a>
+<br><br>October 3: <i>More on conditional analyses</i>
+<br><br>October 10: <i>Ability vs. Control</i>
+<br> Boylan, <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/nous.12370" target="_blank">Does Success entail Ability?</a>; Mandelkern, <a href="https://philpapers.org/rec/MANCAA-6" target="_blank">Chance, ability and control</a>, Santorio,  Kikkert, <a href="https://philpapers.org/rec/KIKATD">Ability's two dimensions of robustness</a>; Loets and Zakkou, <a href="https://philpapers.org/rec/LOEADR" target="_blank">Agentive Duality Reconsidered</a>
+<br><br>October 17: <i>Ability and determinism</i>
+<br> Lewis, <a href="https://philpapers.org/archive/LEWAWF.pdf" target="_blank">Are we free to break the laws?</a>; Albritton, <a href="https://www.jstor.org/stable/3131767" target="_blank">Freedom of will and freedom of action</a>; Setiya, <a href="http://www.ksetiya.net/uploads/2/4/5/2/24528408/freedom.pdf" target="_blank">Freedom and the will</a>; maybe Lewis, <a href="https://www.csus.edu/indiv/m/merlinos/paradoxes%20of%20time%20travel.pdf" target="_blank">The paradoxes of time travel</a>; Dorr, <a href="https://philarchive.org/rec/DORACM" target="_blank">Against counterfactual miracles</a>; Holguin and Teitel, <a href="https://philarchive.org/rec/HOLOTP-5" target="_blank">On the plurality of counterfactuals</a>
+ <br><br>October 24:  <i>Ability and dispositions</i><br> Vetter, <a href="https://philpapers.org/archive/VETAAD.pdf" target="_blank">Are abilities dispositions?</a>; Fara, <a href="https://andrewmbailey.com/papers/Fara%20Mind%202008.pdf" target="_blank">Masked ability and compatibilism</a>; 
+ Vihvelin, <a href="https://vihvelin.typepad.com/Papers/Free%20Will%20Demystified%20A%20Dispositional%20Account.pdf" target="_blank">Free Will Demystified: A Dispositional Account</a>
+ <br><br>October 31: <i>Ability and ethics</i> <br>Blumberg 
+<br><br>November 7: <i>TBD</i><br>Guest speaker: <a href=https://www.anninaloets.com/" target="_blank">Annina Loets</a>, tbd
+<br><br>November 14: <i>Actuality entailments</i><br>Guest speaker: <a href="https://www.davidhboylan.com/" target="_blank">David Boylan</a> on actuality entailments
+<br><br>December 21:  <i>Ability and modal epistemology</i><br> Vetter, <a href="https://academic.oup.com/mind/advance-article/doi/10.1093/mind/fzae037/7725517?searchresult=1" target="_blank">Abilities and the epistemology of ordinary modality</a>, <a href="https://philpapers.org/archive/VETAAE.pdf" target="_blank">An Agency-Based Epistemology of Modality</a>
 <br><br><i>November 28: No class (Thanksgiving)</i>
-<br><br>December 5: tbd
+<br><br>December 5: TBA; Schwarz, <a href="https://philpapers.org/rec/SCHAAP-31" target="_blank">Ability and possibility</a>?
 <br><br>December 12: Student presentations
 
 
@@ -105,5 +125,7 @@ September 5: Some puzzles about ‘can’: Kenny, <a href="https://link.springer
 </li></ul>
 
 <br><br><br><br><br><br><br><br><br>
+
+
 
 
