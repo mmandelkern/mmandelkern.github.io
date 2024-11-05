@@ -100,7 +100,8 @@ September 5: <i>The existential analysis and some puzzles</i>
 <br><br>September 26: <i>Language models and abilities</i>
 <br>Guest speaker: <a href="https://philpeople.org/profiles/jacqueline-harding" target="_blank">Jacqueline Harding</a>, Harding and Sharadin, <a href="https://philpapers.org/rec/HARWII-7" target="_blank">What is it for a Machine Learning Model to Have a Capability?</a>
 <br><br>October 3: <i>More on conditional analyses</i>
-<br><br>October 10: <i>Ability vs. Control</i>
+<br><br>October 10: <i>Ability vs. Contro
+l</i>
 <br> Boylan, <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/nous.12370" target="_blank">Does Success entail Ability?</a>; Mandelkern, <a href="https://philpapers.org/rec/MANCAA-6" target="_blank">Chance, ability and control</a>, Santorio,  Kikkert, <a href="https://philpapers.org/rec/KIKATD">Ability's two dimensions of robustness</a>; Loets and Zakkou, <a href="https://philpapers.org/rec/LOEADR" target="_blank">Agentive Duality Reconsidered</a>
 <br><br>October 17: <i>Ability and determinism</i>
 <br> Lewis, <a href="https://philpapers.org/archive/LEWAWF.pdf" target="_blank">Are we free to break the laws?</a>; Albritton, <a href="https://www.jstor.org/stable/3131767" target="_blank">Freedom of will and freedom of action</a>; Setiya, <a href="http://www.ksetiya.net/uploads/2/4/5/2/24528408/freedom.pdf" target="_blank">Freedom and the will</a>; maybe Lewis, <a href="https://www.csus.edu/indiv/m/merlinos/paradoxes%20of%20time%20travel.pdf" target="_blank">The paradoxes of time travel</a>; Dorr, <a href="https://philarchive.org/rec/DORACM" target="_blank">Against counterfactual miracles</a>; Holguin and Teitel, <a href="https://philarchive.org/rec/HOLOTP-5" target="_blank">On the plurality of counterfactuals</a>
@@ -108,8 +109,26 @@ September 5: <i>The existential analysis and some puzzles</i>
  Vihvelin, <a href="https://vihvelin.typepad.com/Papers/Free%20Will%20Demystified%20A%20Dispositional%20Account.pdf" target="_blank">Free Will Demystified: A Dispositional Account</a>
  <br><br>October 31: <i>Ability and ethics</i> <br>Blumberg 
 <br><br>November 7: <i>TBD</i><br>Guest speaker: <a href=https://www.anninaloets.com/" target="_blank">Annina Loets</a>, tbd
-<br><br>November 14: <i>Actuality entailments</i><br>Guest speaker: <a href="https://www.davidhboylan.com/" target="_blank">David Boylan</a> on actuality entailments
-<br><br>December 21:  <i>Ability and modal epistemology</i><br> Vetter, <a href="https://academic.oup.com/mind/advance-article/doi/10.1093/mind/fzae037/7725517?searchresult=1" target="_blank">Abilities and the epistemology of ordinary modality</a>, <a href="https://philpapers.org/archive/VETAAE.pdf" target="_blank">An Agency-Based Epistemology of Modality</a>
+<br><br>November 14: <i>Actuality entailments</i><br>Guest speaker: <a href="https://www.davidhboylan.com/" target="_blank">David Boylan</a>: 
+<a href="#" onclick="toggle_visibility('AaA'); return false" style=" "> Ability and Actuality</a> 
+ 
+<div id="AaA" style="display:none">
+
+
+<ul type=none Style="margin-bottom: 0px;" ><li>
+<div class="b">
+This paper gives a new account of the actuality entailments of ability claims. We first observe that, in
+the environments which give rise to the actuality entailment, ability claims carry a presupposition of trying.
+We show that, given this presupposition, the actuality entailment is straightforwardly predicted by a
+conditional theory of ability.We also give a theory of why this presupposition arises.We claim that perfective
+aspect introduces a presupposition of settledness; and we say that the relevant conditionals for ability
+claims are settled only when their antecedents are true.
+on actuality entailments
+
+</li></ul>
+
+</div>
+<br>December 21:  <i>Ability and modal epistemology</i><br> Vetter, <a href="https://academic.oup.com/mind/advance-article/doi/10.1093/mind/fzae037/7725517?searchresult=1" target="_blank">Abilities and the epistemology of ordinary modality</a>, <a href="https://philpapers.org/archive/VETAAE.pdf" target="_blank">An Agency-Based Epistemology of Modality</a>
 <br><br><i>November 28: No class (Thanksgiving)</i>
 <br><br>December 5: TBA; Schwarz, <a href="https://philpapers.org/rec/SCHAAP-31" target="_blank">Ability and possibility</a>?
 <br><br>December 12: Student presentations
