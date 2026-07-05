@@ -83,6 +83,12 @@ body { line-height: 1.45; }                       /* more even vertical rhythm *
 .middle .pub { margin: 0 0 0.7em; line-height: 1.25; }   /* tight, uniform gaps between entries */
 .right .pub { margin: 0 0 0.7em; line-height: 1.25; }   /* tight, uniform gaps between entries */
 a.icon-link:hover { text-decoration: none; }      /* keep the profile icons clean */
+
+/* year grouping: year shown once per group, in a light left margin */
+.middle .grp { display: grid; grid-template-columns: 2.7em 1fr; column-gap: 1.5em; margin-bottom: 1.15em; }
+.middle .grp:last-child { margin-bottom: 0; }
+.middle .yr { text-align: right; color: #b3b3b3; font-size: 0.8em; letter-spacing: 0.03em; padding-top: 0.2em; font-variant-numeric: tabular-nums; }
+.middle .grp .pub:last-child { margin-bottom: 0; }
 </style>
 
 
@@ -149,156 +155,134 @@ articles
 
 
 <div style="font-size: 1em">
-<div class="pub"><a href="https://www.philosophical-logic.org/article/id/27646/" style=" " target="_blank">Sequence and consequence</a>, with Cian Dorr.
-2026. <i> Philosophical Logic</i>.</div>
-<div class="pub"><a href="https://osf.io/preprints/psyarxiv/e25x8_v1" style=" " target="_blank">Representations of what’s possible reflect others’ epistemic states</a>, with Lara Kirfel and Jonathan Phillips. 
-2025. <i>Cognitive Science</i>.</div>
-	<div class="pub"><a href="https://philpapers.org/rec/MANDAP-4" style=" " target="_blank">Disjunction and possibility</a>. 2025. 
-<a href="https://onlinelibrary.wiley.com/doi/10.1111/phpe.12213" target="_blank" class="venue"><i>Philosophical Perspectives</i></a>.</div>
-<div class="pub"><a href="https://www.kalomoiros.com/_files/ugd/159d3d_637a7cce86e14b11b40732af5f218a30.pdf" target="_blank">Hurford Disjunctions: Beyond Redundancy and Triviality</a>, with Alexandros Kalomoiros, Paul Marty, Jacopo Romoli, and Florian Schwarz.
-2024. <i>Sinn und Bedeutung</i>.</div>
+<div class="grp"><div class="yr">2026</div><div>
+<div class="pub"><a href="https://www.philosophical-logic.org/article/id/27646/" style=" " target="_blank">Sequence and consequence</a>, with Cian Dorr. <i> Philosophical Logic</i>.</div>
+</div></div>
 
-<div class="pub"><a href="https://www.dropbox.com/scl/fi/l5tq6jsgbpkd8ge9bjzya/ACProceedings2024-2.pdf?rlkey=wilyv6jdcm6pj5s6d7s2x42v3&e=1&st=44p11rvx&dl=0" style=" " target="_blank">Presuppositions project asymmetrically, <i>unless</i> they don't</a>, with Alexandros Kalomoiros, Jacopo Romoli, and Florian Schwarz.
-2024.
+<div class="grp"><div class="yr">2025</div><div>
+<div class="pub"><a href="https://osf.io/preprints/psyarxiv/e25x8_v1" style=" " target="_blank">Representations of what’s possible reflect others’ epistemic states</a>, with Lara Kirfel and Jonathan Phillips. <i>Cognitive Science</i>.</div>
+<div class="pub"><a href="https://philpapers.org/rec/MANDAP-4" style=" " target="_blank">Disjunction and possibility</a>. 
+<a class="venue" href="https://onlinelibrary.wiley.com/doi/10.1111/phpe.12213" target="_blank"><i>Philosophical Perspectives</i></a>.</div>
+</div></div>
+
+<div class="grp"><div class="yr">2024</div><div>
+<div class="pub"><a href="https://www.kalomoiros.com/_files/ugd/159d3d_637a7cce86e14b11b40732af5f218a30.pdf" target="_blank">Hurford Disjunctions: Beyond Redundancy and Triviality</a>, with Alexandros Kalomoiros, Paul Marty, Jacopo Romoli, and Florian Schwarz. <i>Sinn und Bedeutung</i>.</div>
+<div class="pub"><a href="https://www.dropbox.com/scl/fi/l5tq6jsgbpkd8ge9bjzya/ACProceedings2024-2.pdf?rlkey=wilyv6jdcm6pj5s6d7s2x42v3&amp;e=1&amp;st=44p11rvx&amp;dl=0" style=" " target="_blank">Presuppositions project asymmetrically, <i>unless</i> they don't</a>, with Alexandros Kalomoiros, Jacopo Romoli, and Florian Schwarz.
 <i>Amsterdam Colloquium</i>.</div>
-<div class="pub"><a href="https://aclanthology.org/2024.emnlp-main.222/" style=" " target="_blank">Conditional and modal reasoning in large language models</a>, with  Cedegao Zhang and Wesley H. Holliday. 2024.
+<div class="pub"><a href="https://aclanthology.org/2024.emnlp-main.222/" style=" " target="_blank">Conditional and modal reasoning in large language models</a>, with Cedegao Zhang and Wesley H. Holliday.
 
 <i>Empirical Methods in Natural Language Processing</i>.</div>
-<div class="pub"><a href="https://philpapers.org/rec/CHUTCF" style=" " target="_blank">The conjunction fallacy: Confirmation or relevance?</a> with WooJin Chung, Kevin Dorst, and Salvador Mascarenhas.
+<div class="pub"><a href="https://philpapers.org/rec/CHUTCF" style=" " target="_blank">The conjunction fallacy: Confirmation or relevance?</a> with WooJin Chung, Kevin Dorst, and Salvador Mascarenhas. <a class="venue" href="https://www.tandfonline.com/doi/full/10.1080/13546783.2024.2374545" style="_blank"><i>Thinking &amp; Reasoning</i></a>.</div>
+<div class="pub"><a href="https://arxiv.org/abs/2308.05576" style=" " target="_blank">Do language models' words refer?</a> with Tal Linzen. <a class="venue" href="https://direct.mit.edu/coli/article/50/3/1191/121670/Do-Language-Models-Words-Refer" style=" " target="_blank"><i>Computational Linguistics</i>.</a></div>
+<div class="pub"><a href="https://philpapers.org/rec/MANCAA-6" style=" " target="_blank">Chance, ability, and control</a>. <a class="venue" href="https://doi.org/10.1111/phpr.13080" style=" " target="_blank"><i>Philosophy and Phenomenological Research</i>.</a></div>
+<div class="pub"><a href="https://arxiv.org/abs/2203.02872/" style=" " target="_blank">The orthologic of epistemic modals</a>, with Wesley H. Holliday. 
+<a class="venue" href="https://link.springer.com/article/10.1007/s10992-024-09746-7?utm_source=rct_congratemailt&amp;utm_medium=email&amp;utm_campaign=nonoa_20240530&amp;utm_content=10.1007/s10992-024-09746-7" style=" " target="_blank"><i>Journal of Philosophical Logic</i>.</a>
+<a class="venue" href="https://philpapers.org/rec/HOLCCA-10" target="_blank">Proceedings version</a></div>
+</div></div>
 
-2024. <a href="https://www.tandfonline.com/doi/full/10.1080/13546783.2024.2374545" style="_blank" class="venue"><i>Thinking &amp; Reasoning</i></a>.</div>
-<div class="pub"><a href="https://arxiv.org/abs/2308.05576" style=" " target="_blank">Do language models' words refer?</a> with Tal Linzen.
+<div class="grp"><div class="yr">2022</div><div>
+<div class="pub"><a href="https://philpapers.org/rec/DORGG" style=" " target="_blank">Good guesses</a>, with Kevin Dorst. <a class="venue" href="https://onlinelibrary.wiley.com/doi/full/10.1111/phpr.12831" style=" " target="_blank"><i>Philosophy and Phenomenological Research</i>.</a></div>
+<div class="pub"><a href="https://philpapers.org/rec/MANW-2" style=" " target="_blank">Witnesses</a>. <a class="venue" href="https://link.springer.com/article/10.1007/s10988-021-09343-w" style=" " target="_blank"><i>Linguistics and Philosophy</i>.</a>
+<a class="venue" href="WitnessesHeim.pdf" style=" " target="_blank">A more recent handout</a></div>
+<div class="pub"><a href="https://doi.org/10.3998/phimp.1076" style=" " target="_blank">Assertion is weak</a>, with Kevin Dorst. <i>Philosophers' Imprint</i>.</div>
+</div></div>
 
-2024. <a href="https://direct.mit.edu/coli/article/50/3/1191/121670/Do-Language-Models-Words-Refer" style=" " target="_blank" class="venue"><i>Computational Linguistics</i>.</a></div>
-<div class="pub"><a href="https://philpapers.org/rec/MANCAA-6" style=" " target="_blank">Chance, ability, and control</a>.
+<div class="grp"><div class="yr">2021</div><div>
+<div class="pub"><a href="https://philpapers.org/rec/MANIPT-2" style=" " target="_blank">If p, then p!</a> 
 
-2024. <a href="https://doi.org/10.1111/phpr.13080" style=" " target="_blank" class="venue"><i>Philosophy and Phenomenological Research</i>.</a></div>
-<div class="pub"><a href="https://arxiv.org/abs/2203.02872/" style=" " target="_blank">The orthologic of epistemic modals</a>, with Wesley H. Holliday.
-2024. 
-<a href="https://link.springer.com/article/10.1007/s10992-024-09746-7?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=nonoa_20240530&utm_content=10.1007/s10992-024-09746-7" style=" " target="_blank" class="venue"><i>Journal of Philosophical Logic</i>.</a>
-<a href="https://philpapers.org/rec/HOLCCA-10" target="_blank" class="venue">Proceedings version</a></div>
-<div class="pub"><a href="https://philpapers.org/rec/DORGG" style=" " target="_blank">Good guesses</a>, with Kevin Dorst.
+<a class="venue" href="https://www.pdcnet.org/jphil/content/jphil_2021_0118_0012_0645_0679" style=" " target="_blank"><i>The Journal of Philosophy</i>.</a>  Reprinted in the 2021 <a href="http://www.philosophersannual.org/" target="_blank">  Philosopher's Annual. </a>
+<a class="venue" href="https://archive.illc.uva.nl/AC/AC2019/uploaded_files/inlineitem/Mandelkern_Crises_of_Identity_AC2019_Proceedings.pdf" target="_blank">Proceedings version</a></div>
+<div class="pub"><a href="https://philpapers.org/rec/MANPMS-2" style=" " target="_blank">Practical Moore sentences</a>. <a class="venue" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/nous.12287" target="_style"><i>Noûs</i>.</a></div>
+<div class="pub"><a href="https://philpapers.org/rec/MANRTN-2" style=" " target="_blank">Roads to necessitarianism</a>, with Daniel Rothschild. 
+<a class="venue" href="https://rdcu.be/b4Ypi" style=" " target="_blank"><i>Journal of Philosophical Logic</i>.</a></div>
+</div></div>
 
-2022.   <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/phpr.12831" style=" " target="_blank" class="venue"><i>Philosophy and Phenomenological Research</i>.</a></div>
-<div class="pub"><a href="https://philpapers.org/rec/MANW-2" style=" " target="_blank">Witnesses</a>.
-
-2022.   <a href=https://link.springer.com/article/10.1007/s10988-021-09343-w style=" " target="_blank" class="venue"><i>Linguistics and Philosophy</i>.</a>
-<a href=WitnessesHeim.pdf style=" " target="_blank" class="venue">A more recent handout</a></div>
-<div class="pub"><a href="https://doi.org/10.3998/phimp.1076" style=" " target="_blank">Assertion is weak</a>, with Kevin Dorst.
-
-2022.   <i>Philosophers' Imprint</i>.</i></div>
-<div class="pub"><a href="https://philpapers.org/rec/MANIPT-2" style=" " target="_blank">If p, then p!</a>
-
-2021.   
-
-<a href="https://www.pdcnet.org/jphil/content/jphil_2021_0118_0012_0645_0679" style=" " target="_blank" class="venue"><i>The Journal of Philosophy</i>.</a>  Reprinted in the 2021 <a href="http://www.philosophersannual.org/" target="_blank">  Philosopher's Annual. </a>
-<a href="https://archive.illc.uva.nl/AC/AC2019/uploaded_files/inlineitem/Mandelkern_Crises_of_Identity_AC2019_Proceedings.pdf" target="_blank" class="venue">Proceedings version</a></div>
-<div class="pub"><a href="https://philpapers.org/rec/MANPMS-2" style=" " target="_blank">Practical Moore sentences</a>. 2021. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/nous.12287" target="_style" class="venue"><i>No&ucirc;s</i>.</a></div>
-<div class="pub"><a href="https://philpapers.org/rec/MANRTN-2" style=" " target="_blank">Roads to necessitarianism</a>, with Daniel Rothschild.
-
-2021.    
-<a href="https://rdcu.be/b4Ypi" style=" " target="_blank" class="venue"><i>Journal of Philosophical Logic</i>.</a></div>
-<div class="pub"><a href=" https://doi.org/10.3765/sp.13.19" style=" " target="_blank">Eavesdropping: What is it good for?</a> with Jonathan Phillips.
-
-2020.   <i>Semantics and Pragmatics</i>.</div>
-<div class="pub"><a href="https://philpapers.org/rec/MANACT-7" style=" " target="_blank">A counterexample to modus ponenses</a>.
-
-2020.  
-<a href="https://www.pdcnet.org/jphil/content/jphil_2020_0117_0006_0315_0331" style=" " target="_blank" class="venue">
+<div class="grp"><div class="yr">2020</div><div>
+<div class="pub"><a href=" https://doi.org/10.3765/sp.13.19" style=" " target="_blank">Eavesdropping: What is it good for?</a> with Jonathan Phillips. <i>Semantics and Pragmatics</i>.</div>
+<div class="pub"><a href="https://philpapers.org/rec/MANACT-7" style=" " target="_blank">A counterexample to modus ponenses</a>. 
+<a class="venue" href="https://www.pdcnet.org/jphil/content/jphil_2020_0117_0006_0315_0331" style=" " target="_blank">
 <i>The Journal of Philosophy</i>.</a></div>
-<div class="pub"><a href="https://philpapers.org/rec/MANDP-2" style=" " target="_blank">Definiteness projection</a>, with Daniel Rothschild.
-
-2020. 
-<a href="https://link.springer.com/article/10.1007/s11050-019-09159-2?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst&utm_source=ArticleAuthorContributingOnlineFirst&utm_medium=email&utm_content=AA_en_06082018&ArticleAuthorContributingOnlineFirst_20191224" style=" " target="_blank" class="venue">
-  <i>Natural Language Semantics</i>.</a></div>
+<div class="pub"><a href="https://philpapers.org/rec/MANDP-2" style=" " target="_blank">Definiteness projection</a>, with Daniel Rothschild. 
+<a class="venue" href="https://link.springer.com/article/10.1007/s11050-019-09159-2?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst&amp;utm_source=ArticleAuthorContributingOnlineFirst&amp;utm_medium=email&amp;utm_content=AA_en_06082018&amp;ArticleAuthorContributingOnlineFirst_20191224" style=" " target="_blank">
+<i>Natural Language Semantics</i>.</a></div>
 <div class="pub"><a href="https://philpapers.org/rec/MANDN-2" style=" " target="_blank">Dynamic non-classicality</a>.
 
-2020.
-
-<a href="https://www.tandfonline.com/doi/full/10.1080/00048402.2019.1624376" style=" " target="_blank" class="venue">
-  <i>Australasian Journal of Philosophy</i>.</a></div>
+<a class="venue" href="https://www.tandfonline.com/doi/full/10.1080/00048402.2019.1624376" style=" " target="_blank">
+<i>Australasian Journal of Philosophy</i>.</a></div>
 <div class="pub"><a href="Like.pdf" style=" " target="_blank">What's not to like</a>, with Jacopo Romoli.
-2020.
 
-<a href="https://www.mitpressjournals.org/doi/pdf/10.1162/ling_a_00354" style=" " target="_blank" class="venue">
-  <i>Linguistic Inquiry</i>.</a></div>
-<div class="pub"><a href="https://philpapers.org/rec/MANIAA-2" style=" " target="_blank">Import-Export and &lsquo;And&rsquo;</a>.
-2020.
-<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/phpr.12513" style=" " target="_blank" class="venue">
-  <i>Philosophy and Phenomenological Research</i>.</a></div>
+<a class="venue" href="https://www.mitpressjournals.org/doi/pdf/10.1162/ling_a_00354" style=" " target="_blank">
+<i>Linguistic Inquiry</i>.</a></div>
+<div class="pub"><a href="https://philpapers.org/rec/MANIAA-2" style=" " target="_blank">Import-Export and ‘And’</a>.
+<a class="venue" href="https://onlinelibrary.wiley.com/doi/full/10.1111/phpr.12513" style=" " target="_blank">
+<i>Philosophy and Phenomenological Research</i>.</a></div>
 <div class="pub"><a href="https://philpapers.org/rec/MANHTD-2" style=" " target="_blank">How to do things with modals</a>.
-2020.
 
-<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/mila.12231" style=" " target="_blank" class="venue">
-  <i>Mind &amp; Language</i>.</a></div>
+<a class="venue" href="https://onlinelibrary.wiley.com/doi/full/10.1111/mila.12231" style=" " target="_blank">
+<i>Mind &amp; Language</i>.</a></div>
 <div class="pub"><a href="https://philpapers.org/rec/MANWDT-4" style=" " target="_blank">
-We've discovered that projection is asymmetric (and it is!)</a>, with J&eacute;r&eacute;my Zehr, Jacopo Romoli,
- and Florian Schwarz. 2020.
-<a href="https://rdcu.be/bPIub" style=" " target="_blank" class="venue">
-  <i>Linguistics and Philosophy</i>.</a></div>
+We've discovered that projection is asymmetric (and it is!)</a>, with Jérémy Zehr, Jacopo Romoli,
+ and Florian Schwarz.
+<a class="venue" href="https://rdcu.be/bPIub" style=" " target="_blank">
+<i>Linguistics and Philosophy</i>.</a></div>
+</div></div>
+
+<div class="grp"><div class="yr">2019</div><div>
 <div class="pub"><a href="https://philpapers.org/rec/MANTAW" style=" " target="_blank">
 Talking about worlds</a>.
-
-2019.
-<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/phpe.12112" style=" " target="_blank" class="venue">
-  <i>Philosophical Perspectives</i>.</a></div>
-<div class="pub"><a href="https://philpapers.org/rec/MANMAE-3" style=" " target="_blank">Modality and expressibility</a>.
-2019. <a href="https://www.cambridge.org/core/journals/review-of-symbolic-logic/article/modality-and-expressibility/0D526BE1CC5DDA9C842D3F613C11BD4E" style=" " target="_blank" class="venue"> <i> Review of Symbolic Logic</i>.</a></div>
-<div class="pub"><a href="https://philpapers.org/rec/MANWMA-2" style=" " target="_blank">What &lsquo;must&rsquo; adds</a>.
-2019. <a href="https://link.springer.com/article/10.1007/s10988-018-9246-y" style=" " target="_blank" class="venue"> <i> Linguistics and Philosophy</i>.</a>
-<a href="https://philarchive.org/rec/MANAST-3" style=" " target="_blank" class="venue">Proceedings version</a></div>
-<div class="pub"><a href="https://philpapers.org/rec/MANBM-2" style=" " target="_blank">Bounded modality</a>.
-2019. <a href="https://read.dukeupress.edu/the-philosophical-review/article-abstract/128/1/1/137309/Bounded-Modality?redirectedFrom=fulltext" style=" " target="_blank" class="venue">
-  <i> The Philosophical Review</i>.</a></div>
-<div class="pub"><a href="https://philpapers.org/rec/MANAP-5" style=" " target="_blank">Against Preservation</a>, with Justin Khoo.
-2019. 
- <a href="https://academic.oup.com/analysis/advance-article/doi/10.1093/analys/any051/5145021?guestAccessKey=8bb8b868-81a0-4541-b6c0-ea0799b0ddcd" style=" " target="_blank" class="venue"><i>Analysis</i>.</a></div>
+<a class="venue" href="https://onlinelibrary.wiley.com/doi/full/10.1111/phpe.12112" style=" " target="_blank">
+<i>Philosophical Perspectives</i>.</a></div>
+<div class="pub"><a href="https://philpapers.org/rec/MANMAE-3" style=" " target="_blank">Modality and expressibility</a>. <a class="venue" href="https://www.cambridge.org/core/journals/review-of-symbolic-logic/article/modality-and-expressibility/0D526BE1CC5DDA9C842D3F613C11BD4E" style=" " target="_blank"> <i> Review of Symbolic Logic</i>.</a></div>
+<div class="pub"><a href="https://philpapers.org/rec/MANWMA-2" style=" " target="_blank">What ‘must’ adds</a>. <a class="venue" href="https://link.springer.com/article/10.1007/s10988-018-9246-y" style=" " target="_blank"> <i> Linguistics and Philosophy</i>.</a>
+<a class="venue" href="https://philarchive.org/rec/MANAST-3" style=" " target="_blank">Proceedings version</a></div>
+<div class="pub"><a href="https://philpapers.org/rec/MANBM-2" style=" " target="_blank">Bounded modality</a>. <a class="venue" href="https://read.dukeupress.edu/the-philosophical-review/article-abstract/128/1/1/137309/Bounded-Modality?redirectedFrom=fulltext" style=" " target="_blank">
+<i> The Philosophical Review</i>.</a></div>
+<div class="pub"><a href="https://philpapers.org/rec/MANAP-5" style=" " target="_blank">Against Preservation</a>, with Justin Khoo. 
+ <a class="venue" href="https://academic.oup.com/analysis/advance-article/doi/10.1093/analys/any051/5145021?guestAccessKey=8bb8b868-81a0-4541-b6c0-ea0799b0ddcd" style=" " target="_blank"><i>Analysis</i>.</a></div>
 <div class="pub"><a href="https://philpapers.org/rec/KHOTRA" style=" " target="_blank">
 Triviality results and the relationship between logical and natural languages</a>, with Justin Khoo.
-2019.
-<a href="https://academic.oup.com/mind/article/128/510/485/4999884?guestAccessKey=59c9066f-e795-4d56-bb9f-0f1f7c1cc454" style=" " target="_blank" class="venue">
-  <i>Mind.</i></a></div>
+<a class="venue" href="https://academic.oup.com/mind/article/128/510/485/4999884?guestAccessKey=59c9066f-e795-4d56-bb9f-0f1f7c1cc454" style=" " target="_blank">
+<i>Mind.</i></a></div>
 <div class="pub"><a href="https://philpapers.org/rec/MANID" style=" " target="_blank">
 Independence day?</a>
  with Daniel Rothschild.
-2019.
-<a href="https://academic.oup.com/jos/article/36/2/193/5098264?guestAccessKey=3700217e-c4ee-4016-91b5-f5538dfba7c4" style=" " target="_blank" class="venue">
-  <i>Journal of Semantics</i>.</a></div>
-<div class="pub"><a href="https://doi.org/10.3765/sp.11.8" style=" " target="_blank">The case of the missing &lsquo;If&rsquo;: Accessibility relations in Stalnaker's theory of conditionals</a>.
-2018.
-  <i>Semantics and Pragmatics</i>.</div>
+<a class="venue" href="https://academic.oup.com/jos/article/36/2/193/5098264?guestAccessKey=3700217e-c4ee-4016-91b5-f5538dfba7c4" style=" " target="_blank">
+<i>Journal of Semantics</i>.</a></div>
+</div></div>
+
+<div class="grp"><div class="yr">2018</div><div>
+<div class="pub"><a href="https://doi.org/10.3765/sp.11.8" style=" " target="_blank">The case of the missing ‘If’: Accessibility relations in Stalnaker's theory of conditionals</a>.
+ <i>Semantics and Pragmatics</i>.</div>
 <div class="pub"><a href="https://philpapers.org/rec/MANSSF-2" style=" " target="_blank">Sticky situations:   Force  and quantifier domains</a>, with Jonathan Phillips.
-2018.
-  
-<a href=http://journals.linguisticsociety.org/proceedings/index.php/SALT/article/view/28.474 style=" " target="_blank" class="venue"><i>Semantics and Linguistic Theory</i>.</a></div>
+ 
+<a class="venue" href="http://journals.linguisticsociety.org/proceedings/index.php/SALT/article/view/28.474" style=" " target="_blank"><i>Semantics and Linguistic Theory</i>.</a></div>
 <div class="pub"><a href="https://philpapers.org/rec/MANHC" style=" " target="_blank"> 
 Hurford conditionals</a>, with Jacopo Romoli.
-2018.
- <a href="https://academic.oup.com/jos/advance-article-abstract/doi/10.1093/jos/ffx022/4931678?redirectedFrom=fulltext" style=" " target="_blank" class="venue"><i>Journal of Semantics</i>.</a></div>
+ <a class="venue" href="https://academic.oup.com/jos/advance-article-abstract/doi/10.1093/jos/ffx022/4931678?redirectedFrom=fulltext" style=" " target="_blank"><i>Journal of Semantics</i>.</a></div>
+</div></div>
+
+<div class="grp"><div class="yr">2017</div><div>
 <div class="pub"><a href="https://philpapers.org/rec/MANAM" style=" " target="_blank">Agentive modals</a>, with Ginger Schultheis
- and David Boylan.
-2017.   
-<a href="http://philreview.dukejournals.org/content/126/3/301.abstract?etoc" style=" " target="_blank" class="venue"><i>The Philosophical Review</i>.</a>
-<a href="https://semanticsarchive.net/Archive/mVkOTk2N/AC2015-proceedings.pdf" style=" " target="_blank" class="venue">Proceedings version</a></div>
+ and David Boylan. 
+<a class="venue" href="http://philreview.dukejournals.org/content/126/3/301.abstract?etoc" style=" " target="_blank"><i>The Philosophical Review</i>.</a>
+<a class="venue" href="https://semanticsarchive.net/Archive/mVkOTk2N/AC2015-proceedings.pdf" style=" " target="_blank">Proceedings version</a></div>
 <div class="pub"><a href="http://semprag.org/article/view/sp.10.7" style=" " target="_blank">
 Parsing and presuppositions in the calculation of local contexts</a>, 
-with Jacopo Romoli.
-2017.   <a href="http://semprag.org/article/view/sp.10.7" style=" " target="_blank" class="venue"><i>Semantics and Pragmatics</i>.</a></div>
-<div class="pub"><a href="https://semanticsarchive.net/Archive/DRjNjViN/SuB21.pdf" STYLE=" " target="_blank">Hierarchical structure and local contexts</a>,
+with Jacopo Romoli. <a class="venue" href="http://semprag.org/article/view/sp.10.7" style=" " target="_blank"><i>Semantics and Pragmatics</i>.</a></div>
+<div class="pub"><a href="https://semanticsarchive.net/Archive/DRjNjViN/SuB21.pdf" style=" " target="_blank">Hierarchical structure and local contexts</a>,
  
- with Jacopo Romoli.
-2017.   <i>Sinn und Bedeutung</i>.</div>
+ with Jacopo Romoli. <i>Sinn und Bedeutung</i>.</div>
+</div></div>
+
+<div class="grp"><div class="yr">2016</div><div>
 <div class="pub"><a href="https://philpapers.org/rec/MANDT-3" style=" " target="_blank"> 
 Dissatisfaction theory</a>.
 
-2016.
-
-<a href="https://journals.linguisticsociety.org/proceedings/index.php/SALT/article/view/26.391" style=" " target="_blank" class="venue">
-  <i>Semantics and Linguistic Theory</i>.</a></div>
+<a class="venue" href="https://journals.linguisticsociety.org/proceedings/index.php/SALT/article/view/26.391" style=" " target="_blank">
+<i>Semantics and Linguistic Theory</i>.</a></div>
 <div class="pub"><a href="http://semprag.org/article/view/sp.9.13" style=" " target="_blank">
-A note on the architecture of presupposition</a>.
-
-2016.   <i>Semantics and Pragmatics</i>.</div>
+A note on the architecture of presupposition</a>. <i>Semantics and Pragmatics</i>.</div>
+</div></div>
 </div>
 
 </div>
