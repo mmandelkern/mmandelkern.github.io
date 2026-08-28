@@ -45,6 +45,10 @@ figure.pig figcaption {
   }
 }
 
+/* the phone version of the schedule is built from the table by the script
+   at the bottom of the page; it is never shown on desktop */
+#schedmobile { display: none; }
+
 /* ---- phones and narrow windows only; desktop layout above is untouched ---- */
 @media only screen and (max-width: 860px) {
 
@@ -83,47 +87,35 @@ figure.pig figcaption {
     margin: 0 auto 16px auto;
   }
 
-  /* schedule: stack each time slot, label the day on each talk */
-  .sched, .sched tbody, .sched tr, .sched td {
+  /* swap the two-column table for the day-by-day list.
+     if the script did not run, the table stays and just scrolls sideways. */
+  .js-sched .sched { display: none !important; }
+
+  .js-sched #schedmobile {
     display: block;
-    width: auto !important;
+    font-family: Georgia, serif;
+    line-height: 1.35;
   }
 
-  .sched { width: 100% !important; font-size: 15px !important; }
+  .mday { margin: 0 0 24px 0; }
 
-  .sched tr.sched-head { display: none; }
-
-  .sched tr {
-    padding: 12px 0 14px 0;
+  .mdayhead {
+    font-family: Georgia, serif;
+    font-size: 17px !important;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 5px 0;
     border-bottom: 1px solid #6B5FA8;
   }
 
-  .sched td {
-    padding: 0 !important;
-    border-bottom: 0 !important;
-    white-space: normal !important;
+  .mslot {
+    padding: 11px 0 12px 0;
+    border-bottom: 1px solid #D9D3F2;
   }
 
-  .sched td.time {
+  .mtime {
+    font-size: 13px !important;
     font-weight: bold;
-    color: #6B5FA8;
-    margin-bottom: 8px;
-  }
-
-  .sched td[data-day] {
-    margin-top: 10px;
-    padding-left: 10px !important;
-    border-left: 3px solid #C9C0EE !important;
-  }
-
-  .sched td[data-day]:first-of-type { margin-top: 0; }
-
-  .sched td[data-day]:before {
-    content: attr(data-day);
-    display: block;
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
     color: #6B5FA8;
     margin-bottom: 3px;
   }
@@ -248,7 +240,7 @@ Paolo Santorio, Julia Staffel, and Snow Zhang, with the generous support of NYU 
 <tr>
 <td class="time" style="padding: 9px 10px 9px 0; vertical-align: top; border-bottom: 1px solid #D9D3F2; white-space: nowrap;">3:20&ndash;4:20</td>
 <td data-day="Sat Oct 10" style="padding: 9px 10px 9px 0; vertical-align: top; border-bottom: 1px solid #D9D3F2;">How to be a Leibnizian<br><span style="color: #555;">Lingzhi Shi</span></td>
-<td data-day="Sun Oct 11" style="padding: 9px 0 9px 0; vertical-align: top; border-bottom: 1px solid #D9D3F2;">Rational inquiry amidst uncertain priors<br><span style="color: #555;">Yasha Sapir</span></td>
+<td data-day="Sun Oct 11" style="padding: 9px 0 9px 0; vertical-align: top; border-bottom: 1px solid #D9D3F2;">Rational inquiry amidst uncertain priors<br><span style="color: #555;">Yasha Sapir</span><br>Comments: Adam Elga</td>
 </tr>
 
 <tr>
@@ -263,6 +255,8 @@ Paolo Santorio, Julia Staffel, and Snow Zhang, with the generous support of NYU 
 
 </tr>
 </table>
+
+<div id="schedmobile"></div>
 
 
 <br><br> 
@@ -279,3 +273,81 @@ register in advance at <a href="https://docs.google.com/forms/d/e/1FAIpQLSeen6Dw
 </li></ul>
 
 <span class="tailspace"><br><br><br><br><br><br><br><br><br></span>
+
+<script type="text/javascript">
+/* Builds the phone version of the schedule out of the table above, grouped by
+   day and then by time slot. Nothing here runs on the desktop layout except
+   the building of a hidden div; edit the table only, this follows along.
+   A row whose single cell spans the whole width (lunch) is repeated under
+   every day, in the same position in the sequence. */
+(function () {
+  function build() {
+    var table = document.getElementsByTagName('table');
+    var sched = null, i;
+    for (i = 0; i < table.length; i++) {
+      if ((' ' + table[i].className + ' ').indexOf(' sched ') > -1) { sched = table[i]; }
+    }
+    var out = document.getElementById('schedmobile');
+    if (!sched || !out) { return; }
+
+    var order = [];          // column index of each day, in table order
+    var titles = {};         // column index -> day heading
+    var slots = {};          // column index -> array of {time, html}
+    var rows = sched.rows;
+
+    for (i = 0; i < rows.length; i++) {
+      var cells = rows[i].cells, j, c;
+
+      if ((' ' + rows[i].className + ' ').indexOf(' sched-head ') > -1) {
+        for (j = 1; j < cells.length; j++) { titles[j] = cells[j].innerHTML; }
+        continue;
+      }
+
+      /* full-width row: goes under every day seen so far */
+      if (cells.length === 1) {
+        for (j = 0; j < order.length; j++) {
+          slots[order[j]].push({ time: '', html: cells[0].innerHTML });
+        }
+        continue;
+      }
+
+      var time = '';
+      for (j = 0; j < cells.length; j++) {
+        if ((' ' + cells[j].className + ' ').indexOf(' time ') > -1) { time = cells[j].innerHTML; }
+      }
+
+      for (j = 0; j < cells.length; j++) {
+        c = cells[j];
+        if (!c.getAttribute('data-day')) { continue; }
+        if (!slots[j]) { slots[j] = []; order.push(j); }
+        if (!c.innerHTML.replace(/&nbsp;|\s/g, '')) { continue; }
+        slots[j].push({ time: time, html: c.innerHTML });
+      }
+    }
+
+    var html = '', k, s;
+    for (i = 0; i < order.length; i++) {
+      k = order[i];
+      html += '<div class="mday"><h3 class="mdayhead">' +
+              (titles[k] || 'Day ' + (i + 1)) + '</h3>';
+      for (j = 0; j < slots[k].length; j++) {
+        s = slots[k][j];
+        html += '<div class="mslot">' +
+                (s.time ? '<div class="mtime">' + s.time + '</div>' : '') +
+                '<div class="mtalk">' + s.html + '</div></div>';
+      }
+      html += '</div>';
+    }
+
+    out.innerHTML = html;
+    var root = document.documentElement;
+    root.className = root.className ? root.className + ' js-sched' : 'js-sched';
+  }
+
+  if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', build, false);
+  } else {
+    window.onload = build;
+  }
+})();
+</script>
