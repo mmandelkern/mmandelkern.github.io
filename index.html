@@ -7,7 +7,7 @@
 <link rel="icon" href="https://mmandelkern.github.io/favicon.ico" type="image/x-icon">
 <title>Matthew Mandelkern</title>
 <style>
-:root { color-scheme: light; --paper: #faf8f3; --ink: #151818; --muted: #5c605a; --blue: #1d4f8a; --blue-dark: #0f2f57; --rule: #deded4; }
+:root { color-scheme: light; --paper: #ffffff; --ink: #000000; --muted: #5c605a; --blue: #1d4f8a; --blue-dark: #0f2f57; --rule: #deded4; }
 * { box-sizing: border-box; }
 html { scroll-padding-top: 24px; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: Georgia, 'Times New Roman', serif; font-size: 14px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
@@ -26,24 +26,24 @@ p { margin: 0 0 9px; }
 .profiles a { display: inline-flex; align-items: center; justify-content: center; min-width: 24px; min-height: 28px; line-height: 0; }
 .profiles svg, .profiles img { display: block; }
 .year-group { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 16px; margin-bottom: 6px; }
-.year-group h3 { font-size: 14px; line-height: 1.9; font-weight: normal; font-variant-numeric: tabular-nums; color: var(--muted); margin: 0; }
+.year-group h3 { font-size: 14px; line-height: 1.35; font-weight: normal; font-variant-numeric: tabular-nums; color: var(--ink); margin: 0; }
 .publication { margin-bottom: 6px; overflow-wrap: break-word; }
 .publication:last-child { margin-bottom: 0; }
-.details { display: inline; font-size: 14px; color: var(--muted); }
+.details { display: inline; font-size: 14px; color: var(--ink); }
 .details::before { content: ' '; }
-.details a { color: inherit; }
+.details a { color: var(--muted); }
 .details a:hover { color: var(--blue-dark); }
 .supplement { display: inline; font-size: 14px; white-space: normal; }
-.supplement::before { content: ' · '; color: var(--muted); }
+.supplement::before { content: ' · '; color: var(--ink); }
 .details > span { display: inline !important; margin: 0 !important; }
 .details > span::before { content: ' · '; }
 .book { margin: 0 0 22px; font-size: 14px; line-height: 1.35; }
 .book-title { display: inline; font-style: italic; }
 .book-title span { font-style: inherit; }
-.book p { display: inline; margin: 0; font-size: 14px; color: var(--muted); }
+.book p { display: inline; margin: 0; font-size: 14px; color: var(--ink); }
 .book p::before { content: ' · '; }
 .preface { font-size: 14px; }
-.preface::before { content: ' · '; color: var(--muted); }
+.preface::before { content: ' · '; color: var(--ink); }
 sup { line-height: 0; }
 @media (max-width: 800px) {
  .layout { grid-template-columns: 1fr; gap: 26px; }
@@ -79,6 +79,7 @@ sup { line-height: 0; }
 
 
 <section class="articles" aria-label="Papers"><div class="year-group"><h3>2026</h3><div>
+	<div class="publication"><a href="https://philpapers.org/archive/KIRACD.pdf" target="_blank" rel="noopener">A Cautious Defense of Anthropomorphism</a><div class="details">with Cameron Domenico Kirk-Giannini, manuscript</div></div>
 	<div class="publication"><a href="https://philpapers.org/rec/MANHJC" target="_blank" rel="noopener">Hallelujah Junction: Conditionals and connectives</a><div class="details">with Snow Zhang, manuscript</div></div>
 	<div class="publication"><a href="https://www.philosophical-logic.org/article/id/27646/" target="_blank" rel="noopener">Sequence and consequence</a><div class="details">with Cian Dorr, <i> Philosophical Logic</i></div></div><div class="publication">
 		<a href="https://mmandelkern.github.io/Trivalence.pdf" target="_blank" rel="noopener">Trivalence and anaphora</a><div class="details"><a href="https://mitpress.mit.edu/9780262054003/handbook-of-trivalent-logics/" target="_blank" class="venue" rel="noopener">Handbook of trivalent logics</a>, MIT Press</div></div>
